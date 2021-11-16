@@ -1,0 +1,6 @@
+---
+- name: use a dedicated Ansible postgresql role
+  hosts: leader
+  become: yes
+  roles:
+    - { role: postgresql.role }
